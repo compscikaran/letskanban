@@ -1,0 +1,51 @@
+﻿@model letskanban.Models.Story
+
+
+<h2> Add New Story</h2><br><br>
+<div class="row">
+    <div class="col-md-8">
+        @using (Html.BeginForm("CreateStory","Story")) {
+        <div class="form-group">
+           @Html.LabelFor(m => m.Name) : <br>
+           @Html.TextBoxFor(m => m.Name) <br>
+           <i style="color:red">@Html.ValidationMessageFor(m => m.Name)</i>
+        </div>
+        <div class="form-group">
+           @Html.LabelFor(m => m.ModuleName) : <br>
+           @Html.TextBoxFor(m => m.ModuleName) <br>
+           <i style="color:red">@Html.ValidationMessageFor(m => m.ModuleName)</i>
+        </div>
+        <div class="form-group">
+           @Html.LabelFor(m => m.Description) : <br>
+           @Html.TextBoxFor(m => m.Description) <br>
+           <i style="color:red">@Html.ValidationMessageFor(m => m.Description)</i>
+        </div>
+        <div class="form-group">
+           @Html.LabelFor(m => m.UserName) : <br>
+           @Html.DropDownList("UserName",new SelectList(ViewBag.users),"Select User",new { @class = "form-control" }) <br>
+           <i style="color:red">@Html.ValidationMessageFor(m => m.UserName)</i>
+        </div>
+        <div class="form-group">
+           @Html.LabelFor(m => m.HoursRequired) : <br>
+           @Html.TextBoxFor(m => m.HoursRequired) <br>
+           <i style="color:red">@Html.ValidationMessageFor(m => m.HoursRequired)</i>
+        </div>
+        <div class="form-group">
+           @Html.LabelFor(m => m.DueDate) : <br>
+           @Html.TextBoxFor(m => m.DueDate,new { type = "time" }) <br>
+           <i style="color:red">@Html.ValidationMessageFor(m => m.DueDate)</i>
+        </div>
+
+        <div class="form-group">
+           @Html.LabelFor(m => m.Priority) : <br>
+           @Html.DropDownList("Priority",new SelectList(Enum.GetValues(typeof(letskanban.Models.Priority))),"Select Priority", new { @class = "form-control"})
+           <i style="color:red">@Html.ValidationMessageFor(m => m.Priority)</i>
+        </div>
+        <button type="submit" class="btn btn-primary">Save</button>
+        
+        
+        }
+        
+        
+    </div>
+</div>

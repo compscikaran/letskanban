@@ -1,0 +1,22 @@
+﻿@model List<letskanban.Models.Review>
+
+<h1 style="text-align:center;">Code Forum <br> <button class="btn btn-primary" onclick="location.href='@Url.Action("New", "Review")'" >Add Code</button><br></h1>
+<br><br>
+<div class="container">
+    <div class="row">
+        <div class="col-md-6">
+            <ol>
+            @foreach(var review in Model)
+            {
+               <li>
+                @review.Name &nbsp; &nbsp; <button class="btn btn-primary" onclick="location.href='@Url.Action("Detail", "Review",new { id = review.Id })'">Details</button>
+               </li>
+            }  
+            </ol>          
+        </div>
+
+            
+        
+    </div>
+</div> 
+    

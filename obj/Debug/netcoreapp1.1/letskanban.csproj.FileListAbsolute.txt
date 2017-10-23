@@ -1,0 +1,37 @@
+/home/karan/Projects/letskanban/bin/Debug/netcoreapp1.1/letskanban.deps.json
+/home/karan/Projects/letskanban/bin/Debug/netcoreapp1.1/letskanban.runtimeconfig.json
+/home/karan/Projects/letskanban/bin/Debug/netcoreapp1.1/letskanban.runtimeconfig.dev.json
+/home/karan/Projects/letskanban/bin/Debug/netcoreapp1.1/letskanban.dll
+/home/karan/Projects/letskanban/bin/Debug/netcoreapp1.1/letskanban.pdb
+/home/karan/Projects/letskanban/obj/Debug/netcoreapp1.1/letskanban.AssemblyInfo.cs
+/home/karan/Projects/letskanban/obj/Debug/netcoreapp1.1/letskanban.dll
+/home/karan/Projects/letskanban/obj/Debug/netcoreapp1.1/letskanban.pdb
+H:/letskanban/bin/Debug/netcoreapp1.1/letskanban.deps.json
+H:/letskanban/bin/Debug/netcoreapp1.1/letskanban.runtimeconfig.json
+H:/letskanban/bin/Debug/netcoreapp1.1/letskanban.runtimeconfig.dev.json
+H:/letskanban/bin/Debug/netcoreapp1.1/letskanban.dll
+H:/letskanban/bin/Debug/netcoreapp1.1/letskanban.pdb
+H:/letskanban/obj/Debug/netcoreapp1.1/letskanban.csprojResolveAssemblyReference.cache
+H:/letskanban/obj/Debug/netcoreapp1.1/letskanban.AssemblyInfo.cs
+H:/letskanban/obj/Debug/netcoreapp1.1/letskanban.dll
+H:/letskanban/obj/Debug/netcoreapp1.1/letskanban.pdb
+/home/karan/Projects/letskanban/obj/Debug/netcoreapp1.1/letskanban.csprojResolveAssemblyReference.cache
+C:\Users\karan\Documents\Visual Studio 2017\Projects\letskanban\bin\Debug\netcoreapp1.1\letskanban.deps.json
+C:\Users\karan\Documents\Visual Studio 2017\Projects\letskanban\bin\Debug\netcoreapp1.1\letskanban.runtimeconfig.json
+C:\Users\karan\Documents\Visual Studio 2017\Projects\letskanban\bin\Debug\netcoreapp1.1\letskanban.runtimeconfig.dev.json
+C:\Users\karan\Documents\Visual Studio 2017\Projects\letskanban\bin\Debug\netcoreapp1.1\letskanban.dll
+C:\Users\karan\Documents\Visual Studio 2017\Projects\letskanban\bin\Debug\netcoreapp1.1\letskanban.pdb
+C:\Users\karan\Documents\Visual Studio 2017\Projects\letskanban\obj\Debug\netcoreapp1.1\letskanban.csproj.CoreCompileInputs.cache
+C:\Users\karan\Documents\Visual Studio 2017\Projects\letskanban\obj\Debug\netcoreapp1.1\letskanban.AssemblyInfo.cs
+C:\Users\karan\Documents\Visual Studio 2017\Projects\letskanban\obj\Debug\netcoreapp1.1\letskanban.dll
+C:\Users\karan\Documents\Visual Studio 2017\Projects\letskanban\obj\Debug\netcoreapp1.1\letskanban.pdb
+C:\Users\karan\Documents\Visual Studio 2017\Projects\Project\letskanban\bin\Debug\netcoreapp1.1\letskanban.deps.json
+C:\Users\karan\Documents\Visual Studio 2017\Projects\Project\letskanban\bin\Debug\netcoreapp1.1\letskanban.runtimeconfig.json
+C:\Users\karan\Documents\Visual Studio 2017\Projects\Project\letskanban\bin\Debug\netcoreapp1.1\letskanban.runtimeconfig.dev.json
+C:\Users\karan\Documents\Visual Studio 2017\Projects\Project\letskanban\bin\Debug\netcoreapp1.1\letskanban.dll
+C:\Users\karan\Documents\Visual Studio 2017\Projects\Project\letskanban\bin\Debug\netcoreapp1.1\letskanban.pdb
+C:\Users\karan\Documents\Visual Studio 2017\Projects\Project\letskanban\obj\Debug\netcoreapp1.1\letskanban.csprojResolveAssemblyReference.cache
+C:\Users\karan\Documents\Visual Studio 2017\Projects\Project\letskanban\obj\Debug\netcoreapp1.1\letskanban.csproj.CoreCompileInputs.cache
+C:\Users\karan\Documents\Visual Studio 2017\Projects\Project\letskanban\obj\Debug\netcoreapp1.1\letskanban.AssemblyInfo.cs
+C:\Users\karan\Documents\Visual Studio 2017\Projects\Project\letskanban\obj\Debug\netcoreapp1.1\letskanban.dll
+C:\Users\karan\Documents\Visual Studio 2017\Projects\Project\letskanban\obj\Debug\netcoreapp1.1\letskanban.pdb

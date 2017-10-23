@@ -1,0 +1,31 @@
+﻿@model letskanban.Models.LoginViewModel
+
+
+<h2>Login</h2><br><br>
+<div class="row">
+    <div class="col-md-8">
+        @using (Html.BeginForm("Login","Account")) {
+        <div class="form-group">
+           @Html.LabelFor(m => m.UserName) : <br>
+           @Html.TextBoxFor(m => m.UserName) <br>
+           <i style="color:red">@Html.ValidationMessageFor(m => m.UserName)</i>
+        </div>
+        <div class="form-group">
+           @Html.LabelFor(m => m.Password) : <br>
+           @Html.TextBoxFor(m => m.Password) <br>
+           <i style="color:red">@Html.ValidationMessageFor(m => m.Password)</i>
+        </div>
+        <div class="form-group">
+           @Html.LabelFor(m => m.RememberMe) : <br>
+           @Html.CheckBoxFor(m => m.RememberMe) <br>
+           
+        </div>
+      
+        <button type="submit" class="btn btn-primary">Save</button>
+        
+        
+        }
+        
+        
+    </div>
+</div>

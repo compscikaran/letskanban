@@ -1,0 +1,41 @@
+@model letskanban.Models.Review
+<br><br>
+<button class="btn btn-primary" onclick="location.href='@Url.Action("AddComment","Review",new { id = Model.Id })'" >Add Comment</button>
+<div class="container">
+    <div class="row">
+        <div class="col-md-6">
+            <h1>@Model.Name</h1>
+            <h3>Developer : @Model.UserName</h3>
+            <h4>Question Description: @Model.Description</h4><br>
+        </div>
+        </div>
+        <div class="row">
+        <div class="col-md-6">
+            <pre>
+                <code>
+                    @Model.Code
+                </code>
+            </pre>
+        </div>
+        <div class="col-md-6">
+            @if(ViewBag.comments != null)
+            {
+               <ul style="list-style-type: none">
+                @foreach(var c in ViewBag.comments)
+                {
+                    <div class ="well">
+                        <h4>@c.Name</h4>
+                        <p>@c.Message</p>
+                    </div>
+                }
+               </ul>
+            }
+            
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+                <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+                <script>hljs.initHighlightingOnLoad();</script>
+}

@@ -1,0 +1,33 @@
+﻿@model letskanban.Models.Review
+
+
+<h2> Add New Story</h2><br><br>
+<div class="row">
+    <div class="col-md-8">
+        @using (Html.BeginForm("CreateReview","Review")) {
+        <div class="form-group">
+           @Html.LabelFor(m => m.Name) : <br>
+           @Html.TextBoxFor(m => m.Name) <br>
+           <i style="color:red">@Html.ValidationMessageFor(m => m.Name)</i>
+        </div>
+        <div class="form-group">
+           @Html.LabelFor(m => m.UserName) : <br>
+           @Html.TextBoxFor(m => m.UserName) <br>
+           <i style="color:red">@Html.ValidationMessageFor(m => m.UserName)</i>
+        </div>
+        <div class="form-group">
+           @Html.LabelFor(m => m.Description) : <br>
+           @Html.TextBoxFor(m => m.Description) <br>
+           <i style="color:red">@Html.ValidationMessageFor(m => m.Description)</i>
+        </div>
+        <div class="form-group">
+           @Html.LabelFor(m => m.Code) : <br>
+           @Html.TextAreaFor(m => m.Code) <br>
+           <i style="color:red">@Html.ValidationMessageFor(m => m.Code)</i>
+        </div>
+        <button type="submit" class="btn btn-primary">Save</button>
+        }
+        
+        
+    </div>
+</div>

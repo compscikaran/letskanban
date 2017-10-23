@@ -1,0 +1,37 @@
+﻿@model letskanban.Models.RegisterViewModel
+
+
+<h2> Register</h2><br><br>
+<div class="row">
+    <div class="col-md-8">
+        @using (Html.BeginForm("Register","Account")) {
+        <div class="form-group">
+           @Html.LabelFor(m => m.UserName) : <br>
+           @Html.TextBoxFor(m => m.UserName) <br>
+           <i style="color:red">@Html.ValidationMessageFor(m => m.UserName)</i>
+        </div>
+        <div class="form-group">
+           @Html.LabelFor(m => m.Password) : <br>
+           @Html.TextBoxFor(m => m.Password) <br>
+           <i style="color:red">@Html.ValidationMessageFor(m => m.Password)</i>
+        </div>
+        <div class="form-group">
+           @Html.LabelFor(m => m.ConfirmPassword) : <br>
+           @Html.TextBoxFor(m => m.ConfirmPassword) <br>
+           <i style="color:red">@Html.ValidationMessageFor(m => m.ConfirmPassword)</i>
+        </div>
+        <div class="form-group">
+           @Html.LabelFor(m => m.EmailId) : <br>
+           @Html.TextBoxFor(m => m.EmailId) <br>
+           <i style="color:red">@Html.ValidationMessageFor(m => m.EmailId)</i>
+        </div>
+       
+        
+        <button type="submit" class="btn btn-primary">Save</button>
+        
+        
+        }
+        
+        
+    </div>
+</div>

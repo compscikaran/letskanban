@@ -1,0 +1,21 @@
+@model letskanban.Models.Comment
+<h2> Add Comment</h2><br><br>
+<div class="container">
+<div class="row">
+    <div class="col-md-8">
+        @using (Html.BeginForm("SaveComment","Review")) {
+        <div class="form-group">
+           @Html.LabelFor(m => m.Name) : <br>
+           @Html.TextBoxFor(m => m.Name) <br>
+           <i style="color:red">@Html.ValidationMessageFor(m => m.Name)</i>
+        </div>
+        <div class="form-group">
+           @Html.LabelFor(m => m.Message) : <br>
+           @Html.TextBoxFor(m => m.Message) <br>
+           <i style="color:red">@Html.ValidationMessageFor(m => m.Message)</i>
+        </div>
+        <button type="submit" class="btn btn-primary">Save</button>
+        }
+    </div>
+</div>
+</div>
