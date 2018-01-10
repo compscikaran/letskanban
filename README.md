@@ -6,6 +6,7 @@ Letskanban is a web based project management system for agile software developer
 
 - It has a forum area where developers can post code snippets and people can comment on them.
  
+<<<<<<< HEAD
 Landing Page 
 ![Welcome Screen](images/welcome.png)
 
@@ -17,3 +18,6 @@ Forum
 
 Account Management
 ![Register](images/register.png)
+=======
+- It has authentication services for developers
+>>>>>>> 1126a600630d548fa26022a1a64d06d89fe6a10c
