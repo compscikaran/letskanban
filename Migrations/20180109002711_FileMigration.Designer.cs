@@ -11,15 +11,15 @@ using System;
 namespace letskanban.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20171007131932_AddDateTimeToStories")]
-    partial class AddDateTimeToStories
+    [Migration("20180109002711_FileMigration")]
+    partial class FileMigration
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
                 .HasAnnotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.SerialColumn)
-                .HasAnnotation("ProductVersion", "2.0.0-rtm-26452");
+                .HasAnnotation("ProductVersion", "2.0.1-rtm-125");
 
             modelBuilder.Entity("letskanban.Models.Comment", b =>
                 {
@@ -37,6 +37,20 @@ namespace letskanban.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Comments");
+                });
+
+            modelBuilder.Entity("letskanban.Models.DocFile", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd();
+
+                    b.Property<string>("FilePath");
+
+                    b.Property<string>("Title");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Files");
                 });
 
             modelBuilder.Entity("letskanban.Models.Review", b =>

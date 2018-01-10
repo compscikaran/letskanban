@@ -1,7 +1,5 @@
 # Lets Kanban #
 
-[![Build Status](https://travis-ci.org/compscikaran/letskanban.svg?branch=master)](https://travis-ci.org/compscikaran/letskanban)
-
 Letskanban is a web based project management system for agile software developer teams.
 
 - It has a main Kanboard Board where teams can add user stories and assign them to developers. Stories can be prioritized and moved between different columns.

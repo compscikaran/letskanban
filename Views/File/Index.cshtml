@@ -1,0 +1,29 @@
+@model List<letskanban.Models.DocFile>
+    <br><br><br>
+<table>
+    <tr>
+        <th>
+            S No.
+        </th>
+        <th>
+            Title
+        </th>
+        <th>
+            Download
+        </th>
+    </tr>
+    @foreach (var file in Model)
+    {
+        <tr>
+            <td>
+                @file.Id;
+            </td>
+            <td>
+                @file.Title;
+            </td>
+            <td>
+                <a href="@file.FilePath">Click Here</a>;
+            </td>
+        </tr>
+    }
+</table>
