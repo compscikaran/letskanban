@@ -2,15 +2,14 @@
 <br>
 <div class="container">
     <div class="row">
-        <div class="col-md-1">
-        </div>
-        <div class="col-md-1">
+        
+        <div class="col-md-2">
             <button class="btn btn-primary" onclick="location.href='@Url.Action("New", "Story")'">Add Story</button><br>
         </div>
-        <div class="col-md-1">
+        <div class="col-md-2">
             <button class="btn btn-primary" onclick="location.href='@Url.Action("ClearDoneStories", "Story")'">Clear Finished</button><br>
         </div>
-        <div class="col-md-1">
+        <div class="col-md-2">
             <button class="btn btn-primary" onclick="location.href='@Url.Action("SendReminders", "Story")'">SendReminders</button><br>
         </div>
     </div>
@@ -23,13 +22,13 @@
                 @if(story.Status == letskanban.Models.Types.Todo) {
                     <li>
                         <div class="note-@story.Priority">
-                            <b> @story.Name : @story.ModuleName </b><br><button class="btn btn-primary" onclick="location.href='@Url.Action("EditStory", "Story",new { id = story.Id })'">Edit</button><br>
+                            <b> @story.Name : @story.ModuleName </b><br>
                             <p>@story.Description<br>@story.HoursRequired hrs required<br>Due in @((story.DueDate - DateTime.Now).Days) Days and @((story.DueDate - DateTime.Now).Hours) Hours</p>
 
                             Developer: <br><i>@story.UserName</i><br><br>
                             <button class="btn btn-primary" onclick="location.href='@Url.Action("TransferToDoing", "Story",new { id = story.Id })'" >Doing</button>
                             <button class="btn btn-primary" onclick="location.href='@Url.Action("TransferToDone", "Story",new { id = story.Id })'" >Done</button>
-                            
+                            <button class="btn btn-primary" onclick="location.href='@Url.Action("EditStory", "Story",new { id = story.Id })'">Edit</button>
                         </div>
                     </li>
                 }
@@ -43,12 +42,12 @@
                 @if(story.Status == letskanban.Models.Types.Doing) {
                     <li>
                         <div class="note-@story.Priority">
-                            <b> @story.Name : @story.ModuleName </b><br><button class="btn btn-primary" onclick="location.href='@Url.Action("EditStory", "Story",new { id = story.Id })'">Edit</button><br>
+                            <b> @story.Name : @story.ModuleName </b><br>
                             <p>@story.Description<br>@story.HoursRequired hrs required<br>Due in @((story.DueDate - DateTime.Now).Days) Days and @((story.DueDate - DateTime.Now).Hours) Hours</p>
                             Developer: <br><i>@story.UserName</i><br><br>
                             <button class="btn btn-primary" onclick="location.href='@Url.Action("TransferToDo", "Story",new { id = story.Id })'" >To Do</button>
                             <button class="btn btn-primary" onclick="location.href='@Url.Action("TransferToDone", "Story",new { id = story.Id })'" >Done</button>
-                            
+                            <button class="btn btn-primary" onclick="location.href='@Url.Action("EditStory", "Story",new { id = story.Id })'">Edit</button>
                         </div>
                     </li>
                 }
@@ -62,12 +61,12 @@
                 @if(story.Status == letskanban.Models.Types.Done) {
                     <li>
                         <div class="note-@story.Priority">
-                            <b> @story.Name : @story.ModuleName </b><br><button class="btn btn-primary" onclick="location.href='@Url.Action("EditStory", "Story",new { id = story.Id })'">Edit</button><br>
+                            <b> @story.Name : @story.ModuleName </b><br>
                             <p>@story.Description<br>@story.HoursRequired hrs required<br>Due in @((story.DueDate - DateTime.Now).Days) Days and @((story.DueDate - DateTime.Now).Hours) Hours</p>
                             Developer: <br><i>@story.UserName</i><br><br>
                             <button class="btn btn-primary" onclick="location.href='@Url.Action("TransferToDo", "Story",new { id = story.Id })'" >To Do</button>
                             <button class="btn btn-primary" onclick="location.href='@Url.Action("TransferToDoing", "Story",new { id = story.Id })'" >Doing</button>
-                            
+                            <button class="btn btn-primary" onclick="location.href='@Url.Action("EditStory", "Story",new { id = story.Id })'">Edit</button>
                         </div>
                     </li>
                 }
